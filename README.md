@@ -12,12 +12,11 @@ git clone https://github.com/mertemr/esp8266-WOL
 
 2. Install **amp** and **esptool**:
 ```bash
-pip install adafruit-ampy
+pip3 install adafruit-ampy esptool
 ```
 
 3. If [MicroPython](https://micropython.org/download/?port=esp8266) is not installed on ESP8266, install it:
 ```bash
-pip3 install esptool
 esptool --port PORT erase_flash
 esptool --port PORT --baud 115200 write_flash --flash_size=detect 0 FILE.bin
 ```
