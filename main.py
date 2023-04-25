@@ -61,6 +61,10 @@ def run():
                 awake_server()
                 client.close()
                 client = None
+            else:
+                client.send(b'Invalid command.')
+                client.close()
+                client = None
         except Exception:
             pass
         blink(status_led, 0.7)
