@@ -62,7 +62,7 @@ def run():
         is_awaken = True if voltage > 1.7 else False            
         if is_awaken:
             status_led.off()
-            sleep(5)
+            sleep(60)
             continue
         try:
             if client is None:
