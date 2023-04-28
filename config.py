@@ -12,6 +12,7 @@ class PINS:
     D8 = 15
 
 OUT = machine.Pin.OUT
+IN = machine.Pin.IN
 
 WIFI_SSID = "YOUR_WIFI_SSID"
 WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
@@ -19,3 +20,4 @@ WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
 status_led = machine.Pin(PINS.D0, OUT)      # Blink when running
 wifi_led   = machine.Pin(PINS.D1, OUT)      # Light up when connected to WiFi
 wake_on_lan_pin = machine.Pin(PINS.D2, OUT)
+input_pin = machine.ADC(0)
